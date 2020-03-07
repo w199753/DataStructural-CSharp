@@ -1,0 +1,8 @@
+c:\users\fuziyang\documents\visual studio 2015\Projects\DataStructural\DataStructural\bin\Debug\DataStructural.exe.config
+c:\users\fuziyang\documents\visual studio 2015\Projects\DataStructural\DataStructural\bin\Debug\DataStructural.exe
+c:\users\fuziyang\documents\visual studio 2015\Projects\DataStructural\DataStructural\bin\Debug\DataStructural.pdb
+c:\users\fuziyang\documents\visual studio 2015\Projects\DataStructural\DataStructural\obj\Debug\DataStructural.csprojResolveAssemblyReference.cache
+c:\users\fuziyang\documents\visual studio 2015\Projects\DataStructural\DataStructural\obj\Debug\DataStructural.exe
+c:\users\fuziyang\documents\visual studio 2015\Projects\DataStructural\DataStructural\obj\Debug\DataStructural.pdb
+C:\Users\fuziyang\documents\visual studio 2015\Projects\DataStructural\DataStructural\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\fuziyang\documents\visual studio 2015\Projects\DataStructural\DataStructural\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
