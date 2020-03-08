@@ -14,11 +14,16 @@ namespace DataStructural
             //Fun_List();
             //Fun_Stack();
             //Fun_List();
-            Fun_DoubleList();
+            //Fun_DoubleList();
+            Fun_MaxHeap();
             int i = 1;
             Console.WriteLine();
         }
-        static void Fun_Str()
+
+        /// <summary>
+        /// 串
+        /// </summary>
+        public static void Fun_Str()
         {
             //char[] aaa = new char[10] {"0123456789" };
             Str a = new Str("123");
@@ -31,6 +36,7 @@ namespace DataStructural
 
             //Console.WriteLine(c);
         }
+
         /*
         1
         2
@@ -46,6 +52,9 @@ namespace DataStructural
         0
         0
         */
+        /// <summary>
+        /// 二叉树
+        /// </summary>
         public static void Fun_Tree()
         {
             Tree a = new Tree();
@@ -58,6 +67,9 @@ namespace DataStructural
             Console.WriteLine(a.GetChildCount(node));
         }
 
+        /// <summary>
+        /// 单向链表
+        /// </summary>
         public static void Fun_List()
         {
             MyLinkedList list = new MyLinkedList();
@@ -78,6 +90,9 @@ namespace DataStructural
             list.PrintList(node);
         }
 
+        /// <summary>
+        /// 双向链表
+        /// </summary>
         public static void Fun_DoubleList()
         {
             DoubleLinkedList list = new DoubleLinkedList();
@@ -101,6 +116,9 @@ namespace DataStructural
             list.ReversePrintList(node);*/
         }
 
+        /// <summary>
+        /// 栈
+        /// </summary>
         public static void Fun_Stack()
         {
             MyStack stack = new MyStack(10);
@@ -112,6 +130,20 @@ namespace DataStructural
             stack.Pop();
             Console.WriteLine(stack.Peek());
             stack.PrintStack();
+        }
+
+        public static void Fun_MaxHeap()
+        {
+            MaxHeap heap = new MaxHeap();
+            for (int i=0;i<5;i++)
+            {
+                heap.Push(int.Parse(Console.ReadLine()));
+            }
+
+            for (int i=0;i<5;i++)
+            {
+                Console.WriteLine(heap.Pop());
+            }
         }
     }
 }

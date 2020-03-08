@@ -36,6 +36,11 @@ namespace DataStructural
             node.val = -1;
         }
 
+        /// <summary>
+        /// 尾插入
+        /// </summary>
+        /// <param name="node"></param>
+        /// <param name="x"></param>
         public void Add_Back(LinkedListNode node, int x)
         {
             LinkedListNode tmp = node;
@@ -45,11 +50,11 @@ namespace DataStructural
             }
             LinkedListNode p = new LinkedListNode();
             p.next = null;
-            p.pre = tmp;
+            p.pre = tmp;//设置新节点的pre指向最后一个节点
             p.val = x;
 
-            node.pre = p;
-            tmp.next = p;
+            node.pre = p;//设置头节点的pre域为新节点
+            tmp.next = p;//连接新节点
 
             m_length++;
         }
@@ -100,7 +105,6 @@ namespace DataStructural
                 p = p.pre;
             }
             Console.WriteLine();
-
         }
 
         public LinkedListNode FindNodeAsPosition(LinkedListNode node, int pos)
@@ -191,6 +195,10 @@ namespace DataStructural
             m_length--;
         }
 
+        /// <summary>
+        /// 清空所有节点
+        /// </summary>
+        /// <param name="node"></param>
         public void Clear(LinkedListNode node)
         {
             int len = Length;

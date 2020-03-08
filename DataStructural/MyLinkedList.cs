@@ -96,12 +96,12 @@ namespace DataStructural
         public MyLinkedListNode FindNodeAsPosition(MyLinkedListNode node, int pos)
         {
             MyLinkedListNode tNode = node;
-            int tPos = 0;
+            int tPos = 1;
             while (tNode.next != null)
             {
                 if (tPos == pos)
                 {
-                    return tNode;
+                    return tNode.next;
                 }
                 tNode = tNode.next;
                 tPos++;
@@ -114,9 +114,9 @@ namespace DataStructural
             MyLinkedListNode tNode = node;
             while(tNode.next!=null)
             {
-                if(tNode.data==value)
+                if(tNode.next.data==value)
                 {
-                    return tNode;
+                    return tNode.next;
                 }
                 tNode = tNode.next;
             }
