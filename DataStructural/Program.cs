@@ -15,7 +15,8 @@ namespace DataStructural
             //Fun_Stack();
             //Fun_List();
             //Fun_DoubleList();
-            Fun_MaxHeap();
+            //Fun_MaxHeap();
+            Fun_HashTable();
             int i = 1;
             Console.WriteLine();
         }
@@ -145,5 +146,15 @@ namespace DataStructural
                 Console.WriteLine(heap.Pop());
             }
         }
+
+        public static void Fun_HashTable()
+        {
+            MyHashTable.OpenAddressing open = new MyHashTable.OpenAddressing(10);
+            open.CreateTable(5);
+            open.Print();
+            Console.WriteLine(open.GetElement(10));
+        }
+
+        
     }
 }

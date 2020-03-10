@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="DoubleLinkedList.cs" />
     <Compile Include="MaxHeap.cs" />
+    <Compile Include="MyHashTable.cs" />
     <Compile Include="MyLinkedList.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
