@@ -1,11 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DataStructural
 {
+    //[StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi, Pack = 1)]
+    [StructLayout(LayoutKind.Sequential,CharSet =CharSet.Ansi,Pack =4)]
+    struct Test
+    {
+        int a;
+       
+        double c; short b;
+    }
     class Program
     {
         static void Main(string[] args)
@@ -16,9 +25,14 @@ namespace DataStructural
             //Fun_List();
             //Fun_DoubleList();
             //Fun_MaxHeap();
-            Fun_HashTable();
+            //Fun_HashTable();
+            Fun_OneWayCircularLinkedList();
+
+
+            /*Test t = new Test();
             int i = 1;
-            Console.WriteLine();
+            int size = Marshal.SizeOf(t);
+            Console.WriteLine(size);*/
         }
 
         /// <summary>
@@ -136,12 +150,12 @@ namespace DataStructural
         public static void Fun_MaxHeap()
         {
             MaxHeap heap = new MaxHeap();
-            for (int i=0;i<5;i++)
+            for (int i = 0; i < 5; i++)
             {
                 heap.Push(int.Parse(Console.ReadLine()));
             }
 
-            for (int i=0;i<5;i++)
+            for (int i = 0; i < 5; i++)
             {
                 Console.WriteLine(heap.Pop());
             }
@@ -155,6 +169,22 @@ namespace DataStructural
             Console.WriteLine(open.GetElement(10));
         }
 
-        
+        /// <summary>
+        /// 单向循环链表测试
+        /// </summary>
+        public static void Fun_OneWayCircularLinkedList()
+        {
+            OneWayCircularLinkedList.LinkedListNode node = new OneWayCircularLinkedList.LinkedListNode();
+            OneWayCircularLinkedList list = new OneWayCircularLinkedList();
+            list.CreatList(5, node);
+            list.Add_Back(node, 100);
+            list.Add_Back(node, 1000);
+            list.PrintList(node);
+            //Console.WriteLine(list.FindNodeAsValue(node, 2).val);
+
+            //list.PrintList(node);
+            list.PrintListAtPos(node, 3);
+        }
+
     }
 }
